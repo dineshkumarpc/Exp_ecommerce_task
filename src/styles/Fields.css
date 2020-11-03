@@ -1,0 +1,6 @@
+:root {
+  --main-bg-color: brown;
+}
+.invalid{
+  color: var(--main-bg-color);
+  }
