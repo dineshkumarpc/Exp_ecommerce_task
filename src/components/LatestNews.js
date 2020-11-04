@@ -6,7 +6,7 @@ export class LatestNews extends Component {
 
         this.state = {
             latestNews: [],
-            date:""
+            date: ""
         }
     }
     getLatestNewsData = async () => {
@@ -19,8 +19,8 @@ export class LatestNews extends Component {
     }
 
     componentDidMount() {
-       
-    
+
+
         this.getLatestNewsData()
     }
     render() {
@@ -36,7 +36,7 @@ export class LatestNews extends Component {
                             <th scope="col">Published At</th>
                             <th scope="col">Name</th>
                             <th scope="col">Title</th>
-                           
+
 
                         </tr>
                     </thead>
@@ -57,7 +57,7 @@ export class LatestNews extends Component {
                                 <td>{item.publishedAt}</td>
                                 <td>{item.source.name}</td>
                                 <td>{item.title}</td>
-                             
+
 
                             </tr>
                         ))}
